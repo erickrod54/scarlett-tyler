@@ -1,8 +1,14 @@
+/**
+* Scarlett-taylor Portfolio - version 1.01 - 
+index.css file - Features: 
+*  
+*     --> Testing 'Baloo Tamma 2' google font
+*
+* Note: this file will be refactor
+*/
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Baloo Tamma 2', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
