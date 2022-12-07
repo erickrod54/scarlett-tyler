@@ -6,14 +6,35 @@ index.css file - Features:
 *
 * Note: this file will be refactor
 */
-body {
+
+*,
+*::before,
+*::after{
   margin: 0;
-  font-family: 'Baloo Tamma 2', cursive;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*---utility components-------**/
+:root{
+  font-size: 62.5%;
+
+  /*----------custom properties or variables--------**/
+
+  /** main color */
+  --primary-color:#014d4e;
+
+  /** secondary color */
+  --secondary-color:#ff9408;
+
+  /** tertiary color */
+  --tertiary-color:#017374;
+
+  /** tertiary shade dark color */
+  --tertiary-color:#01727498;
+
+}
+
+body{
+  font-family: 'Baloo Tamma 2', cursive;
 }
