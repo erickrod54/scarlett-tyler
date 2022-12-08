@@ -1,8 +1,7 @@
-/**
-* Scarlett-taylor Portfolio - version 1.01 - 
+/** Scarlett-taylor Portfolio - version 1.02 - 
 index.css file - Features: 
 *  
-*     --> Testing 'Baloo Tamma 2' google font
+*     --> Adding body styles
 *
 * Note: this file will be refactor
 */
@@ -37,4 +36,8 @@ index.css file - Features:
 
 body{
   font-family: 'Baloo Tamma 2', cursive;
+  line-height: 1.8;
+
+  display: flex;
 }
+
