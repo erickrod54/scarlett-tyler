@@ -1,28 +1,32 @@
 import React from "react";
 import styled from "styled-components";
 import { Logo } from "../assets/assets.index";
+import { NavLink } from 'react-router-dom'
 import { useAppContext } from "../context";
 
+
 /**
-* Scarlett-taylor Portfolio - version 1.02 - 
+* Scarlett-taylor Portfolio - version 1.03 - 
 * SocialSidebar - Features: 
 *  
-*     --> Building 'SocialSidebar'
+*     --> Finish Building 'SocialSidebar'
 *
-*     --> Building and styling 
-*          'side-nav__content--social'  
+*     --> Setting icons in 'SocialIcons' array.
 *  
-* Note: pending to convert 'li' in 'links' when
-* react router-dom will implemented.
+*     --> Finishing srtyles.
+*  
+* Note: styles applied with 'NavLink'.
 */
 
 const SocialSidebar = () => {
     
-    const { facebook, instagram, twitter, linkedin, dribble, pinterest } = useAppContext()
-    console.log('data from context ==>', facebook, instagram, twitter, linkedin, dribble, pinterest)
-    
+    const { SocialIcons } = useAppContext()
+
+    const { isActive } = NavLink
+
+    console.log('is active prop ==>',isActive)
     return(
-        <Wrapper>
+        <Wrapper >
             <aside className="side-bar">
                 <div className="side-nav">
                     <div className="side-nav__content">
@@ -30,24 +34,18 @@ const SocialSidebar = () => {
                             <img src={Logo} alt='logo'/>
                         </div>
                         <ul className='side-nav__content--social'>
-                            <li>
-                             {facebook}      
-                            </li>
-                            <li>
-                             {instagram}   
-                            </li>
-                            <li>
-                              {twitter}  
-                            </li>
-                            <li>
-                              {linkedin}  
-                            </li>
-                            <li>
-                              {dribble}                             
-                            </li>
-                            <li>
-                                {pinterest}                             
-                            </li>
+                           {SocialIcons.map((social) => {
+                            const { id, name, url } = social;
+
+                            return(
+                                <NavLink 
+                                    key={id} 
+                                    to={url}
+                                    >
+                                    {name}
+                                </NavLink>
+                            )
+                           })}
                         </ul>        
                     </div>
                 </div>
@@ -87,26 +85,26 @@ const Wrapper = styled.div`
         align-items: center;
         justify-content: flex-end;
 
-        li{
+        
+        a{
             list-style-type: none;
             /**20px => 2rem => (1rem + [10/1500] + 100 -0.666667-)
             * Dynamic value for an aspect ratio oof 1500px */
             font-size: calc(1rem + 0.666667vw);
             color: white;
-
+    
             /***make the transition smooth */
             transition: color 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             padding-bottom: calc(2rem + 0.666667vw);
         }
-
+    
         /**pending to fix hover effect ( waiting for 
             router implementation ) */
-        li:hover
-        li:active{
-           color:var(--secondary-color) ;
+        a:hover{
+           color: var(--secondary-color) ;
         }
-
     }
+
 `
 
 export default SocialSidebar;
