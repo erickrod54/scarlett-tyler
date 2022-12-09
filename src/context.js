@@ -1,32 +1,27 @@
 import React, { useContext } from "react";
-import { dribble, facebook, instagram, linkedin, pinterest, twitter } from "./data";
+import { AppLinks, SocialIcons } from "./data";
 
  /**
- * Scarlett-taylor portfolio - version 1.02 - context js -
+ * Scarlett-taylor portfolio - version 1.03 - context js -
  * Features:
  *
- *      --->Importing 'social' icons and provide it 
- *          them  
+ *      --->Importing 'AppLinks', and 'SocialIcons' 
+ *          and providing it them.  
  * 
  * Note: this file is going to be added more data
  * 
  * * */
 
-
 const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
-
+    
     return(
         <AppContext.Provider 
-            
-            value={{ 
-                facebook,
-                instagram,
-                twitter, 
-                linkedin, 
-                dribble, 
-                pinterest
+        
+        value={{ 
+            AppLinks,
+            SocialIcons
              }}>
             { children }
         </AppContext.Provider>
