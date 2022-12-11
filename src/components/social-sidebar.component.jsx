@@ -4,28 +4,24 @@ import { Logo } from "../assets/assets.index";
 import { NavLink } from 'react-router-dom'
 import { useAppContext } from "../context";
 
-
 /**
-* Scarlett-taylor Portfolio - version 1.03 - 
+* Scarlett-taylor Portfolio - version 1.04 - 
 * SocialSidebar - Features: 
 *  
-*     --> Finish Building 'SocialSidebar'
-*
-*     --> Setting icons in 'SocialIcons' array.
+*     --> Adding a dynamic 'width'
+*        to img logo           
 *  
-*     --> Finishing srtyles.
-*  
-* Note: styles applied with 'NavLink'.
+* Note: by adding the dynamic width as the 
+* same dynamic hieght in 'Navbar' they will
+* grow in the same porportion.
 */
 
 const SocialSidebar = () => {
     
     const { SocialIcons } = useAppContext()
 
-    const { isActive } = NavLink
-
-    console.log('is active prop ==>',isActive)
     return(
+            
         <Wrapper >
             <aside className="side-bar">
                 <div className="side-nav">
@@ -56,7 +52,7 @@ const SocialSidebar = () => {
 
 const Wrapper = styled.div`
     .side-nav__content--logo img{
-        width: calc(7vw + 5vh);
+        width: calc(2vw + 2vh);
         object-fit: cover;
     }
 
