@@ -1,11 +1,12 @@
 import React from "react";
+import styled from "styled-components";
 import { Aboutme, Contact, Hero, Navbar, Skills, SocialSidebar, Testimonials, Work } from "../components/index.components";
 
-/*Scarlett-taylor Portfolio - version 1.03 - 
+/*Scarlett-taylor Portfolio - version 1.04 - 
 *HomePage - Features: 
 *  
-*     --> Uncommenting 'Navbar' to start to 
-*         work on it.
+*     --> Reseting 'ui white space' and 
+*         displaying 'flex'.
 *
 * Note: this file will be refactor
 */
@@ -15,16 +16,28 @@ const HomePage = () => {
 
     return(
         <>
+        <Wrapper>
+            <SocialSidebar />
             <Navbar />
            {/** <Hero /> */}
-            <SocialSidebar />
             {/** <Work />
             <Aboutme />
             <Skills />
             <Testimonials />
             <Contact />*/}    
+        </Wrapper>
         </>
     )
 }
+
+const Wrapper = styled.div`
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    display: flex;
+    
+   
+`
 
 export default HomePage;
