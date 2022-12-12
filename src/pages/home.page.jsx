@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Aboutme, Contact, Hero, Navbar, Skills, SocialSidebar, Testimonials, Work } from "../components/index.components";
 
-/*Scarlett-taylor Portfolio - version 1.04 - 
+/*Scarlett-taylor Portfolio - version 1.05 - 
 *HomePage - Features: 
 *  
 *     --> Reseting 'ui white space' and 
@@ -35,6 +35,7 @@ const Wrapper = styled.div`
         margin: 0;
         padding: 0;
     }
+    
     display: flex;
     
    
