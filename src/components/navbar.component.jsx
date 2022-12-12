@@ -4,16 +4,10 @@ import styled from "styled-components";
 import { useAppContext } from "../context";
 
  /**
- * Scarlett-taylor portfolio - version 1.05 - Navbar -
+ * Scarlett-taylor portfolio - version 1.06 - Navbar -
  * Features:
  *
- *      ---> Building 'Navbar'.  
- * 
- *      ---> Building media query ruule for
- *          screen 'max-width' of '610px'
- * 
- *      ---> Starting to build hamburger menu
- *          and effects
+ *      ---> Adding styles for 'links' to fade
  * 
  * Note: this file is going to be added more data
  * 
@@ -32,6 +26,10 @@ const Navbar = () => {
 
         hamburger.addEventListener('click', () => {
             hamburgerContainer.classList.toggle('clicked')
+        })
+
+        links.forEach((link) => {
+            link.classList.toggle('fade');
         })
     }
 
@@ -74,7 +72,7 @@ const Wrapper = styled.div`
         height: calc(3vw + 3vh);
         z-index: 2;
         
-        @media screen and (max-width:610px){
+        @media screen and (max-width:610px){    
         
         .header_main-nav{
             width: 30rem;
@@ -135,6 +133,38 @@ const Wrapper = styled.div`
 
             .clicked .line-3{
                 transform: rotateZ(405deg) translate(-0.8rem, -0.6rem);
+            }
+
+            .header_main-nav--links li{
+                opacity: 1;
+            }
+
+            .header_main-nav--links li:nth-child(1){
+                transition: all 0.5s ease-in-out 0.2s;
+            }
+
+            .header_main-nav--links li:nth-child(2){
+                transition: all 0.5s ease-in-out 0.4s;
+            }
+
+            .header_main-nav--links li:nth-child(3){
+                transition: all 0.5s ease-in-out 0.6s;
+            }
+
+            .header_main-nav--links li:nth-child(4){
+                transition: all 0.5s ease-in-out 0.8s;
+            }
+
+            .header_main-nav--links li:nth-child(5){
+                transition: all 0.5s ease-in-out 1s;
+            }
+
+            .header_main-nav--links li:nth-child(6){
+                transition: all 0.5s ease-in-out 1.2s;
+            }
+
+            .header_main-nav--links li.fade{
+                opacity: 0;
             }
         }
     
