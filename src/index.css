@@ -1,9 +1,10 @@
-/** Scarlett-taylor Portfolio - version 1.05 - 
+/** Scarlett-taylor Portfolio - version 1.06 - 
 index.css file - Features: 
 *  
-*     --> Adding body styles
+*     --> Adding '--secondary-color-m'
+*         '--tertiary-color-m'    
 *
-* Note: this file will be refactor
+* Note: this last colors are dark shades
 */
 
 *,
@@ -26,11 +27,14 @@ index.css file - Features:
   /** secondary color */
   --secondary-color:#ff9408;
 
+  /** secondary color modified*/
+  --secondary-color-m:#ff94088e;
+
   /** tertiary color */
   --tertiary-color:#017374;
 
   /** tertiary shade dark color */
-  --tertiary-color:#01727498;
+  --tertiary-color-m:#01727498;
 
 }
 
