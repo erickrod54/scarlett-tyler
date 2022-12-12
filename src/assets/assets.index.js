@@ -1,12 +1,13 @@
 import Logo from './logo.jpg'
+import herofullimage from './hero-full-image.jpg'
 
-/*Scarlett-taylor Portfolio - version 1.04 - 
+/*Scarlett-taylor Portfolio - version 1.06 - 
 * assets.index - Features: 
 *  
-*     --> Adding new logo.
+*     --> Adding new 'herofullimage'.
 *  
 * Note: this file will be refactor
 */
 
 
-export { Logo } 
+export { Logo, herofullimage } 
