@@ -2,14 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { Aboutme, Contact, Hero, Navbar, Skills, SocialSidebar, Testimonials, Work } from "../components/index.components";
 
-/*Scarlett-taylor Portfolio - version 1.06 - 
+/*Scarlett-taylor Portfolio - version 1.07 - 
 *HomePage - Features: 
 *  
-*     --> Uncommenting 'Hero' to start to
+*     --> Uncommenting 'Work' to start to
 *         work on it.
-*
-*     --> Building 'home-content' to style 
-*        'hero' in relation with 'Navbar'
 *
 * Note: this file will be refactor
 */
@@ -24,9 +21,9 @@ const HomePage = () => {
             <div className="home-content">
             <Navbar />
             <Hero />
+            <Work />
             </div>
-            {/** <Work />
-            <Aboutme />
+            {/** <Aboutme />
             <Skills />
             <Testimonials />
             <Contact />*/}    
