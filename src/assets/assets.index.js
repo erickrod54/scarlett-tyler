@@ -6,14 +6,15 @@ import clothbag from './portfolio-creative-01-1.jpg';
 import branding from './portfolio-creative-02-1.jpg';
 import cup from './portfolio-design-01-1.jpg';
 import printer from './portfolio-print-02-1.jpg';
+import aboutimg from './content-img-02.jpg'
 
-/*Scarlett-taylor Portfolio - version 1.07 - 
+/*Scarlett-taylor Portfolio - version 1.08 - 
 * assets.index - Features: 
 *  
-*     --> Adding new assets 'work' component.
+*     --> Adding new assets 'aboutimg' component.
 *  
 * Note: this file will be refactor
 */
 
 
-export { Logo, herofullimage, poster,paperbag, clothbag, branding, cup, printer } 
+export { Logo, herofullimage, poster,paperbag, clothbag, branding, cup, printer, aboutimg } 
