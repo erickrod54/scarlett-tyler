@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitter, faLinkedin, faDribbble, faPinterest } from '@fortawesome/free-brands-svg-icons'
-import { branding, clothbag, cup, paperbag, poster, printer } from "./assets/assets.index";
+import { aboutimg, branding, clothbag, cup, paperbag, poster, printer } from "./assets/assets.index";
 
 
 /**
- * Scarlett-taylor portfolio - version 1.07 - data js -
+ * Scarlett-taylor portfolio - version 1.08 - data js -
  * Features:
  *
  *      --->Building 'WorkImages' array
@@ -13,6 +13,12 @@ import { branding, clothbag, cup, paperbag, poster, printer } from "./assets/ass
  * 
  * * */
 
+export const Aboutimg = [
+    {
+        aboutimg:aboutimg,
+        name:'about me image'
+    }
+]
 
 export const facebook = <FontAwesomeIcon icon={faFacebook} />
 export const instagram = <FontAwesomeIcon icon={faInstagram} />
