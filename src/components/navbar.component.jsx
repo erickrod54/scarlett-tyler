@@ -4,10 +4,10 @@ import styled from "styled-components";
 import { useAppContext } from "../context";
 
  /**
- * Scarlett-taylor portfolio - version 1.06 - Navbar -
+ * Scarlett-taylor portfolio - version 1.09 - Navbar -
  * Features:
  *
- *      ---> Adding styles for 'links' to fade
+ *      ---> Commenting logs
  * 
  * Note: this file is going to be added more data
  * 
@@ -17,7 +17,7 @@ import { useAppContext } from "../context";
 const Navbar = () => {
     const { AppLinks } = useAppContext()
 
-    console.log('data applinks =>', AppLinks)
+    //console.log('data applinks =>', AppLinks)
 
     const handleHamburger = () => {
         const hamburgerContainer = document.querySelector('.header_main-nav')
