@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Aboutme, Contact, Hero, Navbar, Skills, SocialSidebar, Testimonials, Work } from "../components/index.components";
 
-/*Scarlett-taylor Portfolio - version 1.07 - 
+/*Scarlett-taylor Portfolio - version 1.08 - 
 *HomePage - Features: 
 *  
-*     --> Uncommenting 'Work' to start to
+*     --> Uncommenting 'Aboutme' to start to
 *         work on it.
 *
 * Note: this file will be refactor
@@ -22,9 +22,9 @@ const HomePage = () => {
             <Navbar />
             <Hero />
             <Work />
+            <Aboutme />
             </div>
-            {/** <Aboutme />
-            <Skills />
+            {/** <Skills />
             <Testimonials />
             <Contact />*/}    
         </Wrapper>
