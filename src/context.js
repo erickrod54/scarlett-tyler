@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { AppLinks, SocialIcons, WorkImages } from "./data";
+import { Aboutimg, AppLinks, SocialIcons, WorkImages } from "./data";
 
  /**
- * Scarlett-taylor portfolio - version 1.07 - context js -
+ * Scarlett-taylor portfolio - version 1.08 - context js -
  * Features:
  *
- *      --->Importing 'WorkImages' 
+ *      --->Importing 'Aboutimg' 
  *          and providing it them.  
  * 
  * Note: this file is going to be added more data
@@ -22,7 +22,8 @@ const AppProvider = ({ children }) => {
         value={{ 
             AppLinks,
             SocialIcons,
-            WorkImages
+            WorkImages,
+            Aboutimg
              }}>
             { children }
         </AppContext.Provider>
