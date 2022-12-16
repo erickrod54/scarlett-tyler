@@ -2,12 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { useAppContext } from "../context";
 
-/*Scarlett-taylor Portfolio - version 1.08 - 
-* assets.index - Features: 
+/*Scarlett-taylor Portfolio - version 1.09 - 
+* Work Component - Features: 
 *  
-*     --> Finish Building Work Component.
-*
-*     --> Finish writting styles.
+*     --> Commenting logs
 *  
 * Note: this file will be refactor
 */
@@ -16,7 +14,7 @@ const Work = () => {
     
     const { WorkImages } = useAppContext()
 
-    console.log('assets to build work ==>', WorkImages)
+    //console.log('assets to build work ==>', WorkImages)
     return(
         <Wrapper>
             {WorkImages.map((picture) => {
