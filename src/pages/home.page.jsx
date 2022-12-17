@@ -1,16 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import { Aboutme, Contact, Hero, Navbar, Skills, SocialSidebar, Testimonials, Work } from "../components/index.components";
+import { Aboutme, Contact, Hero, Navbar, Services, Skills, SocialSidebar, Testimonials, Work } from "../components/index.components";
 
-/*Scarlett-taylor Portfolio - version 1.08 - 
+/*Scarlett-taylor Portfolio - version 2.00 - 
 *HomePage - Features: 
 *  
-*     --> Uncommenting 'Aboutme' to start to
+*     --> Adding 'Services' to start to
 *         work on it.
 *
 * Note: this file will be refactor
 */
-
 
 const HomePage = () => {
 
@@ -23,6 +22,7 @@ const HomePage = () => {
             <Hero />
             <Work />
             <Aboutme />
+            <Services />
             </div>
             {/** <Skills />
             <Testimonials />
