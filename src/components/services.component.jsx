@@ -2,13 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { useAppContext } from "../context";
 
-/*Scarlett-taylor Portfolio - version 1.09 - 
+/*Scarlett-taylor Portfolio - version 2.00 - 
 * Services - Features: 
 *  
-*     --> Startting to build 'Services'
-*  
-*     --> Destructuring and testing data from 
-*          the context    
+*     --> Adding icons    
 *       
 * Note: this file will be refactor
 */
@@ -26,6 +23,7 @@ const Services = () => {
 
                 return(
                     <div key={id} className="service">
+                        <i>{icon}</i>
                         <h3>{name}</h3>
                         <p>{description}</p>
                     </div>                  
