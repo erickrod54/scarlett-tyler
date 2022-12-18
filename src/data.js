@@ -5,13 +5,10 @@ import { faListCheck, faMobileScreenButton, faPaintBrush, faPaintRoller, faShare
 import { faPenToSquare } from "@fortawesome/free-regular-svg-icons";
 
 /**
- * Scarlett-taylor portfolio - version 2.00 - data js -
+ * Scarlett-taylor portfolio - version 2.01 - data js -
  * Features:
  *
- *      --->Building 'WorkImages' array
- * 
- *      --> Importing icons and adding them to 
- *          ServicesData
+ *      --->Building 'SkillsData' 
  * 
  * Note: this file is going to be added more data
  * 
@@ -39,6 +36,49 @@ export const phonescreen = <FontAwesomeIcon icon={faMobileScreenButton}/>
 export const  paintrole = <FontAwesomeIcon icon={faPaintRoller}/>
 export const pensquare = <FontAwesomeIcon icon={faPenToSquare}/>
 export const  nodes = <FontAwesomeIcon icon={faShareNodes}/>
+
+export const SkillsData = [
+    {
+        id:1,
+        title:'design skills'
+    },
+    {
+        id:2,
+        title:'coding skills'
+    },
+    {
+        id:3,
+        skillname:'web design'
+    },
+    {
+        id:4,
+        skillname:'print design'
+    },
+    {
+        id:5,
+        skillname:'logo design'
+    },
+    {
+        id:6,
+        skillname:'graphic design'
+    },
+    {
+        id:7,
+        skillname:'html/css'
+    },
+    {
+        id:8,
+        skillname:'javaScript'
+    },
+    {
+        id:9,
+        skillname:'phyton'
+    },
+    {
+        id:10,
+        skillname:'sql'
+    }
+]
 
 export const ServicesData = [
     {
