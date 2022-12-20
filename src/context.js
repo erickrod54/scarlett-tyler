@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { Aboutimg, AppLinks, ServicesData, SkillsData, SocialIcons, WorkImages } from "./data";
+import { Aboutimg, AppLinks, ServicesData, SkillsData, SocialIcons, TestimonialsData, WorkImages } from "./data";
 
  /**
- * Scarlett-taylor portfolio - version 2.01 - context js -
+ * Scarlett-taylor portfolio - version 2.03 - context js -
  * Features:
  *
- *      --->Importing 'ServicesData' 
+ *      --->Importing 'TestimonialsData' 
  *          and providing it them.  
  * 
  * Note: this file is going to be added more data
@@ -25,7 +25,8 @@ const AppProvider = ({ children }) => {
             WorkImages,
             Aboutimg,
             ServicesData,
-            SkillsData
+            SkillsData,
+            TestimonialsData
              }}>
             { children }
         </AppContext.Provider>
