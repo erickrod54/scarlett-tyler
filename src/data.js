@@ -1,14 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitter, faLinkedin, faDribbble, faPinterest } from '@fortawesome/free-brands-svg-icons'
-import { aboutimg, branding, clothbag, cup, paperbag, poster, printer } from "./assets/assets.index";
+import { aboutimg, branding, clothbag, cup, paperbag, poster, printer, testimonial1, testimonial2, testimonial3, testimonial4 } from "./assets/assets.index";
 import { faListCheck, faMobileScreenButton, faPaintBrush, faPaintRoller, faShareNodes } from "@fortawesome/free-solid-svg-icons";
 import { faPenToSquare } from "@fortawesome/free-regular-svg-icons";
 
 /**
- * Scarlett-taylor portfolio - version 2.01 - data js -
+ * Scarlett-taylor portfolio - version 2.03 - data js -
  * Features:
  *
- *      --->Building 'SkillsData' 
+ *      --->Building 'TestimonialsData' 
  * 
  * Note: this file is going to be added more data
  * 
@@ -36,6 +36,37 @@ export const phonescreen = <FontAwesomeIcon icon={faMobileScreenButton}/>
 export const  paintrole = <FontAwesomeIcon icon={faPaintRoller}/>
 export const pensquare = <FontAwesomeIcon icon={faPenToSquare}/>
 export const  nodes = <FontAwesomeIcon icon={faShareNodes}/>
+
+export const TestimonialsData = [
+    {
+      id:1,
+      name:'tony',
+      testimonial:'remarkable eye',
+      image:testimonial1,
+      description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+      id:2,
+      name:'natasha',
+      testimonial:'catchy designs',
+      image:testimonial2,
+      description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+      id:3,
+      name:'veers',
+      testimonial:'smoking websites',
+      image:testimonial3,
+      description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+      id:4,
+      name:'xavi',
+      testimonial:'easy to work with',
+      image:testimonial4,
+      description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    }
+]
 
 export const SkillsData = [
     {
